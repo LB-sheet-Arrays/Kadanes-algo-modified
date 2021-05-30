@@ -6,6 +6,7 @@
 #include<stdio.h>
 #include<limits.h> //to use INT_MAX macro
 
+//Modulus function
 int mod(int a)
 {
 	int c=0;
