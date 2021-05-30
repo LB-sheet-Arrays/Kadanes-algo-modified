@@ -3,6 +3,10 @@
 //I have modified it to handle this corner case. In case of a negative array, it returns the smallest negative element as the
 //highest sum.
 
+//TC => O(n) bcoz the full array is traversed twice. 
+//SC => O(1) bcoz constant space is used. 
+
+
 #include<stdio.h>
 #include<limits.h> //to use INT_MAX macro
 
@@ -28,13 +32,13 @@ int a[100],i=0,n,maxSum,sum,start=0,end=0,s=0,count=0;
 printf("\t\nKadane's algorithm!");
 printf("\n\nHow many elements do you want? => ");
 scanf("%d",&n);
-printf("\t\nPlz start filling your elements one by one.");                //Time complexity is O(n) bcoz there is only one for
-//feeding array                                                           //loop that spans entire array only once!
+printf("\t\nPlz start filling your elements one by one.");                
 
+//feeding array                                                           
 for(i=0;i<n;i++)
 {
-		printf("\nElement no. %d => ",i+1);
-		scanf("%d",&a[i]);
+     printf("\nElement no. %d => ",i+1);
+     scanf("%d",&a[i]);
 }
 
 //CORNER CASE
